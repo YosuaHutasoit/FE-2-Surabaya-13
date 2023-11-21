@@ -131,45 +131,45 @@ nav{
   .header{
     text-align: center;
     padding: 32px;
-}
-.header h1{
-    font-family: 'Sacramento';
-    font-size: 50px;
-}
+  }
+  .header h1{
+      font-family: 'Sacramento';
+      font-size: 35px;
+  }
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0px 100px 100px 100px;
-    justify-content: center;
-    align-items: center; 
-}
-.column{
-    flex: 25%;
-    max-width: 25%;
-}
-.img-hover-zoom{
-    height: auto;
-    overflow: hidden;
-    border: 5px solid #ffff;
-}
-.img-hover-zoom img{
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition:  transform .5s ease;
-}
-.img-hover-zoom:hover img{
-    transform: scale(1.5);
-}
+  .row{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0px 50px 50px 50px;
+      justify-content: center;
+      align-items: center; 
+  }
+  .column{
+      flex: 25%;
+      max-width: 25%;
+  }
+  .img-hover-zoom{
+      height: auto;
+      overflow: hidden;
+      border: 5px solid #ffff;
+  }
+  .img-hover-zoom img{
+      vertical-align: middle;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition:  transform .5s ease;
+  }
+  .img-hover-zoom:hover img{
+      transform: scale(1.5);
+  }
 
-@media screen and (max-width: 800px) {
-    .column{
-        flex: 50%;
-        max-width: 50%;
-    }
-}
+  @media screen and (max-width: 800px) {
+      .column{
+          flex: 50%;
+          max-width: 50%;
+      }
+  }
 
 @media screen and (max-width: 500px) {
     .column{
@@ -178,6 +178,8 @@ nav{
     }
 }
 
+
+/* button 
 .container {
   max-width: 800px;
   margin: 0;
@@ -189,10 +191,13 @@ nav{
 
 h1 {
   color: #333;
+  margin-bottom: 10px;
+  font-size: 30px;
 }
 
 p {
   color: #666;
+  margin-bottom: 10px;
 }
 
 .button-pay {
@@ -214,18 +219,53 @@ button {
 }
 
 button:hover {
-  background-color: #2980b9;
+  background-color: #e5e6e7;
 }
 
-/* Add media query for responsiveness */
 @media (max-width: 600px) {
   .container {
       padding: 10px;
   }
 
   button {
-      width: 100%;
+      width: 50%;
+      margin-top: 10px;
   }
+}
+*/
+
+/* card */
+.main-card {
+  width: 85%;
+  margin: auto;
+  border: 5px solid #F7F8FC;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 1, 0, 3);
+  margin-bottom: 80px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.inner-card {
+  width: 50%;
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #FFFFFF;
+  border: 10px solid #F7F8FC;
+  border-radius: 10px;
+  margin-left: 25%;
+  box-shadow: 0 4px 8px rgba(0, 1, 0, 3);
+}
+
+.main-card h1 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  color: #555;
 }
 
 
