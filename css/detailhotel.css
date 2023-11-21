@@ -179,7 +179,7 @@ nav{
 }
 
 
-/* button 
+/* button  */
 .container {
   max-width: 800px;
   margin: 0;
@@ -232,7 +232,7 @@ button:hover {
       margin-top: 10px;
   }
 }
-*/
+
 
 /* card */
 .main-card {
@@ -247,25 +247,48 @@ button:hover {
   margin-top: 20px;
 }
 
-.inner-card {
-  width: 50%;
+.inner-card-1,
+.inner-card-2 {
+  width: 45%; 
   text-align: center;
   margin-top: 20px;
   padding: 15px;
   background-color: #FFFFFF;
   border: 10px solid #F7F8FC;
   border-radius: 10px;
-  margin-left: 25%;
   box-shadow: 0 4px 8px rgba(0, 1, 0, 3);
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.inner-card-1 {
+  margin-right: 5%;
 }
 
 .main-card h1 {
   text-align: center;
   color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-p {
+.inner-card-1 p {
   color: #555;
+  font-size: 20px;
+}
+
+.inner-card-2 p {
+  color: #555;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .inner-card-1,
+  .inner-card-2 {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 
