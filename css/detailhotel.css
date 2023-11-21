@@ -178,6 +178,57 @@ nav{
     }
 }
 
+.container {
+  max-width: 800px;
+  margin: 0;
+  padding: 20px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+.button-pay {
+  margin-top: 20px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align:justify;
+  text-decoration: none;
+  background-color: #FE7200;
+  color: #fff;
+  border: 1px solid #FE7200;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 600px) {
+  .container {
+      padding: 10px;
+  }
+
+  button {
+      width: 100%;
+  }
+}
+
+
   /* footer */
 footer {
     display: flex;
