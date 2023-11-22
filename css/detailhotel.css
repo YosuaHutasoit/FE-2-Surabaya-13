@@ -131,61 +131,12 @@ nav{
   .header {
     text-align: center;
     padding: 32px;
-    position: relative; 
   }
 
   .header h1 {
       font-family: 'Sacramento';
       font-size: 35px;
       margin-bottom: 15px;
-  }
-
-  .header div {
-      position: absolute;
-      bottom: 0; 
-      right: 16%; 
-      margin-bottom: 15px;
-      margin-top: 15px;
-  }
-
-  .location {
-    position: absolute;
-    bottom: 0;
-    left: -37%;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    font-size: 15px;
-  }
-
-  .rate {
-    position: absolute;
-    bottom: 0;
-    left: -48.5%;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    font-size: 15px;
-  }
-
-  .img-rate{
-    position: absolute;
-    bottom: 0;
-    left: -52%;
-    margin-bottom: 10px;
-    margin-top: 15px;
-  }
-
-  .icons {
-    position: absolute;
-    bottom: 0;
-    right: 16%;
-    margin-bottom: 15px;
-    margin-top: 15px;
-  }
-
-  .header img {
-      margin-left: 10px;
-      width: 20px;
-      height: 20px;
   }
 
   .row{
