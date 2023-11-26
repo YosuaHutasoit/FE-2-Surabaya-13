@@ -764,6 +764,31 @@ input,select {
   line-height: 40.3px;
 }
 
+@media (max-width: 768px) {
+  .group {
+    width: 90%;
+    margin: 32px auto 0;
+  }
+
+  .overlap {
+    width: 100%;
+  }
+
+  .rectangle {
+    width: 60px;
+    left: 30px;
+  }
+
+  .rectangle-2 {
+    width: 70px;
+    left: 50px; 
+  }
+
+}
+
+  
+
+
 
   /* card */
 .main-card {
