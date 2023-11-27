@@ -1,11 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/landingpage.css">
+
+    <!-- memberi icon pada tab judul -->
+    <link rel="shortcut icon" href="../image/logo Haven 2.png" type="image/x-icon">
+
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Home</title>
 </head>
+
 <body>
-    <h1>cs</h1>
+
+
+    <!-- NAVIGASI -->
+    <nav>
+        <div class="logo">
+            <img src="../image/Logo Haven.png" alt="" class="img-1">
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/html/listhotel.html">Hotel</a></li>
+          <li><a href="/html/aboutus.html">About Us</a></li>
+        </ul>
+      </nav> 
+    <!-- NAVIGASI END -->
+
+
+    <!-- HERO IMAGE -->
+    <div class="container-hero">
+        <div class="hero">
+            <div class="search">
+                <input type="search" id="search" placeholder="Staycation to" class="search-bar">
+                <i class='bx bx-search'></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Title Top Populer -->
+    <div class="title">
+        <i class='bx bxs-location-plus'></i>
+        <h1> Top Populer </h1>
+    </div>
+
+    <!-- Card -->
+    <div class="container-card">
+        <a href="../html/listhotel.html#bali">
+            <div class="card">
+                <img src="../image/bali.png" alt="Gambar 1">
+                <div class="card-content">
+                    <h3>Bali</h3>
+                </div>
+            </div>
+        </a>
+        
+        <a href="../html/listhotel.html#bandung">
+            <div class="card">
+                <img src="../image/bandung.png" alt="Gambar 2">
+                <div class="card-content">
+                    <h3>Bandung</h3>
+                </div>
+            </div>
+        </a>
+        
+        <a href="../html/listhotel.html#Jakarta">
+            <div class="card">
+                <img src="../image/jakarta.png" alt="Gambar 3">
+                <div class="card-content">
+                    <h3>Jakarta</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!-- Card end -->
+
+
+    <!-- Testimonial -->
+    <div class="container-testimonial">
+        <div class="item">
+            <h1>Testimonial</h1>
+            <h2>What People Say About Us.</h2>
+        </div>
+
+        <div class="item">
+            <div class="testimonial-container">
+                <img src="../image/reza_arap.jpg" alt="" class="avatar">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next.
+                        Of believed or diverted no."</p>
+                    <p class="user-info">Arap</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title find">
+        <i class='bx bxs-location-plus'></i>
+        <h1> Find Hotels at the Best Prices </h1>
+    </div>
+
+    <!-- carosel -->
+    <div class="wrapper">
+        <div class="carousel-container" id="carousel1">
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <div class="card-container-carosel">
+                        <div class="card-carosel">
+                            <img src="../image/nusaCeningan.png" alt="Image 1">
+                            <div class="carosel-info">
+                                <h3>Nusa Ceningan, Indonesai</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp4,398,219 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                        <div class="card-carosel">
+                            <img src="../image/nusaCeningan.png" alt="Image 2">
+                            <div class="carosel-info">
+                                <h3>Nusa Ceningan, Indonesai</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp4,398,219 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                        <div class="card-carosel">
+                            <img src="../image/gambar 1 haven.png" alt="Image 3">
+                            <div class="carosel-info">
+                                <h3>Nusa Ceningan, Indonesai</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp4,398,219 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+            <button class="prevBtn">❮</button>
+            <button class="nextBtn">❯</button>
+        </div>
+        
+
+        <div class="carousel-container" id="carousel1">
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <div class="card-container-carosel">
+                        <div class="card-carosel">
+                            <img src="../image/Santika.png" alt="Image 1">
+                            <div class="carosel-info">
+                                <h3>Santika Premiere Slipi Jakarta</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp6,000,062 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                        <div class="card-carosel">
+                            <img src="../image/gambar 1 haven.png" alt="Image 2">
+                            <div class="carosel-info">
+                                <h3>Santika Premiere Slipi Jakarta</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp6,000,062 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                        <div class="card-carosel">
+                            <img src="../image/gambar 1 haven.png" alt="Image 3">
+                            <div class="carosel-info">
+                                <h3>Santika Premiere Slipi Jakarta</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp6,000,062 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+            <button class="prevBtn">❮</button>
+            <button class="nextBtn">❯</button>
+        </div>
+
+        <div class="carousel-container" id="carousel1">
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <div class="card-container-carosel">
+                        <div class="card-carosel">
+                            <img src="../image/Grand_G7.png" alt="Image 1">
+                            <div class="carosel-info">
+                                <h3>Grand G7 Hotel Kemayoran</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp4,300,000 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                        <div class="card-carosel">
+                            <img src="../image/gambar 1 haven.png" alt="Image 2">
+                            <div class="carosel-info">
+                                <h3>Grand G7 Hotel Kemayoran</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp4,300,000 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                        <div class="card-carosel">
+                            <img src="../image/gambar 1 haven.png" alt="Image 3">
+                            <div class="carosel-info">
+                                <h3>Grand G7 Hotel Kemayoran</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp4,300,000 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+            <button class="prevBtn">❮</button>
+            <button class="nextBtn">❯</button>
+        </div>
+
+        <!-- carosel -->
+    <div class="wrapper">
+        <div class="carousel-container" id="carousel1">
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <div class="card-container-carosel">
+                        <div class="card-carosel">
+                            <img src="../image/nusaCeningan.png" alt="Image 1">
+                            <div class="carosel-info">
+                                <h3>Nusa Ceningan, Indonesai</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp4,398,219 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                        <div class="card-carosel">
+                            <img src="../image/nusaCeningan.png" alt="Image 2">
+                            <div class="carosel-info">
+                                <h3>Nusa Ceningan, Indonesai</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp4,398,219 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                        <div class="card-carosel">
+                            <img src="../image/gambar 1 haven.png" alt="Image 3">
+                            <div class="carosel-info">
+                                <h3>Nusa Ceningan, Indonesai</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp4,398,219 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+            <button class="prevBtn">❮</button>
+            <button class="nextBtn">❯</button>
+        </div>
+        
+
+        <div class="carousel-container" id="carousel1">
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <div class="card-container-carosel">
+                        <div class="card-carosel">
+                            <img src="../image/Santika.png" alt="Image 1">
+                            <div class="carosel-info">
+                                <h3>Santika Premiere Slipi Jakarta</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp6,000,062 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                        <div class="card-carosel">
+                            <img src="../image/gambar 1 haven.png" alt="Image 2">
+                            <div class="carosel-info">
+                                <h3>Santika Premiere Slipi Jakarta</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp6,000,062 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                        <div class="card-carosel">
+                            <img src="../image/gambar 1 haven.png" alt="Image 3">
+                            <div class="carosel-info">
+                                <h3>Santika Premiere Slipi Jakarta</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp6,000,062 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+            <button class="prevBtn">❮</button>
+            <button class="nextBtn">❯</button>
+        </div>
+
+        <div class="carousel-container" id="carousel1">
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <div class="card-container-carosel">
+                        <div class="card-carosel">
+                            <img src="../image/Grand_G7.png" alt="Image 1">
+                            <div class="carosel-info">
+                                <h3>Grand G7 Hotel Kemayoran</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp4,300,000 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                        <div class="card-carosel">
+                            <img src="../image/gambar 1 haven.png" alt="Image 2">
+                            <div class="carosel-info">
+                                <h3>Grand G7 Hotel Kemayoran</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp4,300,000 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                        <div class="card-carosel">
+                            <img src="../image/gambar 1 haven.png" alt="Image 3">
+                            <div class="carosel-info">
+                                <h3>Grand G7 Hotel Kemayoran</h3>
+                                <p>Book your gateway to this contem..</p>
+                                <p class="price">Rp4,300,000 <span class="per">night</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more images as needed -->
+                </div>
+            </div>
+            <button class="prevBtn">❮</button>
+            <button class="nextBtn">❯</button>
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <div class="view-all">
+        <a href="#">View all</a>
+    </div>
+    <!-- carosel end-->
+
+    <!-- container-subscribe -->
+    <div class="container-subscribe">
+        <div class="content-subscribe">
+            <h1>Subscribe and get exclusive deals & offer</h1>
+            <div class="container-input">
+                <div class="search-subs">
+                    <i class='bx bx-envelope'></i>
+                    <input type="text" placeholder="Enter Your Email">
+                </div>
+                <div class="btn">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bagian Footer -->
+    <footer>
+        <div class="footer-col">
+            <h4>Home </h4>
+            <ul>
+                <li><a href="#">Benefit</a></li>
+                <li><a href="#">Course</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Sit Amet</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Download</h4>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Partner</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>About Us</h4>
+            <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Memanggil Fungsi Slide Java Script -->
+    <script src="../js/script.js"></script>
+
 </body>
+
 </html>
