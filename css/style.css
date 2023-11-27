@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -137,14 +139,25 @@ input[type="checkbox"]{
 
 /* konten */
 .aboutus-div {
+  justify-content: center;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 .aboutus-div-2 {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .div-2 {
+    max-width: 100%;
+  }
+}
+.aboutus-div-3 {
   gap: 20px;
   display: flex;
 }
 @media (max-width: 991px) {
-  .aboutus-div-2 {
+  .aboutus-div-3 {
     flex-direction: column;
     align-items: stretch;
     gap: 0px;
@@ -154,7 +167,7 @@ input[type="checkbox"]{
   display: flex;
   flex-direction: column;
   line-height: normal;
-  width: 52%;
+  width: 53%;
   margin-left: 0px;
 }
 @media (max-width: 991px) {
@@ -163,17 +176,17 @@ input[type="checkbox"]{
   }
 }
 .aboutus-img {
-  aspect-ratio: 0.87;
+  aspect-ratio: 0.88;
   object-fit: contain;
   object-position: center;
   width: 100%;
   overflow: hidden;
   flex-grow: 1;
+  border-radius: 50px;
 }
 @media (max-width: 991px) {
   .aboutus-img {
     max-width: 100%;
-    margin-top: 40px;
   }
 }
 .aboutus-column-2 {
@@ -188,92 +201,41 @@ input[type="checkbox"]{
     width: 100%;
   }
 }
-.aboutus-div-3 {
+.aboutus-div-4 {
   display: flex;
   flex-direction: column;
   margin: auto 0;
   padding: 0 20px;
 }
 @media (max-width: 991px) {
-  .aboutus-div-3 {
+  .aboutus-div-4 {
     max-width: 100%;
     margin-top: 40px;
   }
 }
-.aboutus-div-4 {
+.aboutus-div-5 {
   color: #000;
-  align-self: start;
+  margin-right: -20px;
   font: 400 50px/62.5px Arizonia, sans-serif;
 }
 @media (max-width: 991px) {
-  .aboutus-div-4 {
+  .aboutus-div-5 {
     max-width: 100%;
     font-size: 40px;
     line-height: 56px;
   }
 }
-.aboutus-div-5 {
+.aboutus-div-6 {
   color: #000;
-  align-self: start;
-  margin-top: 19px;
+  margin: 19px -20px 0 0;
   font: 400 18px/24px Arial Rounded MT Bold, -apple-system, Roboto, Helvetica,
     sans-serif;
-}
-@media (max-width: 991px) {
-  .aboutus-div-5 {
-    max-width: 100%;
-  }
-}
-.aboutus-img-2 {
-  aspect-ratio: 111;
-  object-fit: contain;
-  object-position: center;
-  width: 100%;
-  stroke-width: 1px;
-  stroke: rgba(151, 151, 151, 0.6);
-  overflow: hidden;
-  align-self: stretch;
-  margin: 60px -20px 0 0;
-}
-@media (max-width: 991px) {
-  .aboutus-img-2 {
-    max-width: 100%;
-    margin-top: 40px;
-  }
-}
-.aboutus-div-6 {
-  align-self: start;
-  display: flex;
-  margin-top: 42px;
-  width: 434px;
-  max-width: 100%;
-  flex-direction: column;
+  margin-bottom: 40px;
+  margin-right: 50px;
 }
 @media (max-width: 991px) {
   .aboutus-div-6 {
-    margin-top: 40px;
-  }
-}
-.aboutus-div-7 {
-  color: #000;
-  font: 400 18px/24px Arial Rounded MT Bold, -apple-system, Roboto, Helvetica,
-    sans-serif;
-}
-@media (max-width: 991px) {
-  .aboutus-div-7 {
     max-width: 100%;
-  }
-}
-.aboutus-div-8 {
-  color: #000;
-  margin-top: 64px;
-  font: 400 34px/46px Arial Rounded MT Bold, -apple-system, Roboto, Helvetica,
-    sans-serif;
-}
-@media (max-width: 991px) {
-  .aboutus-div-8 {
-    max-width: 100%;
-    margin-top: 40px;
   }
 }
 
