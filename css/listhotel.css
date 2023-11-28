@@ -147,10 +147,16 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 20px;
 }
 
 .row1 img{
   transition: .3s;
+}
+
+.logo1 img {
+  transition: .3s;
+  margin-left: 20px;
 }
 
 .row1 img:hover {
@@ -223,16 +229,21 @@ section {
 .carosel-info h3 {
   font-size: .8rem;
   font-weight: 700;
+  margin-top: 10px;
+  margin-left: 5px;
 }
 
 .carosel-info p {
   font-size: 0.8rem;
   font-weight: normal;
+  margin-top: 10px;
+  margin-left: 5px;
 }
 
 .card-carosel .price {
   font-size: 1rem;
   font-weight: 800;
+  margin-left: 5px;
 }
 
 .card-carosel .per {
