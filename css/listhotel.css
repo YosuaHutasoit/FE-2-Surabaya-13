@@ -159,6 +159,11 @@ section {
   margin-left: 20px;
 }
 
+.logo2 img {
+  transition: .3s;
+  margin-left: 20px;
+}
+
 .row1 img:hover {
   transform: scale(0.9);
 }
