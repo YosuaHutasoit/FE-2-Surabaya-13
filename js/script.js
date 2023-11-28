@@ -1,26 +1,43 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var form = document.querySelector('form');
+document.addEventListener("DOMContentLoaded", function() {
+    // Menangkap elemen-elemen yang diperlukan
+    let carousels = document.querySelectorAll(".carousel-container");
 
-    form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Mencegah perilaku formulir default
+    // Iterasi melalui setiap carousel
+    carousels.forEach(function(carousel) {
+        let carouselWrapper = carousel.querySelector(".carousel-wrapper");
+        let prevBtn = carousel.querySelector(".prevBtn");
+        let nextBtn = carousel.querySelector(".nextBtn");
+        let carouselWidth = carousel.clientWidth;
+        let currentSlide = 0;
 
-        // Menampilkan pesan alert
-        alert('Terimakasih sudah booking!');
+        // Fungsi untuk menampilkan slide berikutnya
+        function showNextSlide() {
+            if (currentSlide < 2) {
+                currentSlide++;
+            } else {
+                currentSlide = 0;
+            }
+            updateCarousel();
+        }
 
-        // Mereset formulir setelah pengiriman
-        form.reset();
-    });
+        // Fungsi untuk menampilkan slide sebelumnya
+        function showPrevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+            } else {
+                currentSlide = 2;
+            }
+            updateCarousel();
+        }
 
-    // Menambahkan event listener fokus pada input nama
-    var nameInput = document.querySelector('input[type="text"]');
-    nameInput.addEventListener('focus', function () {
-        // Mengubah warna batas input ketika fokus
-        nameInput.style.borderColor = '#ffc107';
-    });
+        // Fungsi untuk memperbarui tampilan carousel
+        function updateCarousel() {
+            let newTransformValue = -currentSlide * 350 + "px";
+            carouselWrapper.style.transform = "translateX(" + newTransformValue + ")";
+        }
 
-    // Menambahkan event listener blur untuk mereset warna batas ketika fokus hilang
-    nameInput.addEventListener('blur', function () {
-        // Mereset warna batas ketika fokus hilang
-        nameInput.style.borderColor = '';
+        // Menambahkan event listener untuk tombol "next" dan "previous"
+        nextBtn.addEventListener("click", showNextSlide);
+        prevBtn.addEventListener("click", showPrevSlide);
     });
 });
