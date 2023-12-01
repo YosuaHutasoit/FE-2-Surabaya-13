@@ -370,6 +370,7 @@ nav{
     width: 100%;
     overflow: hidden;
     flex-grow: 1;
+    margin-top: 5px;
   }
   @media (max-width: 991px) {
     .contents-img-7 {
