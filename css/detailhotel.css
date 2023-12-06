@@ -552,8 +552,7 @@ nav{
       padding-right: 20px;
     }
   }
-  .rate-5 {
-  }
+  
   @media (max-width: 991px) {
     .rate-5 {
       max-width: 100%;
