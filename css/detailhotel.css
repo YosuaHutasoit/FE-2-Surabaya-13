@@ -1024,27 +1024,31 @@ nav{
   }
   
   @media screen and (max-width: 768px) {
-    .container {
+    .container-reserved-form {
       flex-direction: column;
     }
-    .container-form  {
+    
+    .container-time {
+      padding: 30px;
+    }
+  
+    .container-form {
       padding: 10px;
     }
+  
     .heading-phone {
       font-size: 17px;
     }
-    
   }
   
   @media screen and (min-width: 768px) and (max-width: 880px) {
     .container-time {
       padding: 30px;
     }
-    .container-form  {
+  
+    .container-form {
       padding: 10px;
     }
-    
-    
   }
   
 
