@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     const searchBar = document.getElementById('search');
     searchBar.addEventListener('input', handleSearch);
 });
@@ -8,3 +8,7 @@ function handleSearch() {
     // Lakukan sesuatu dengan nilai pencarian, seperti menampilkan hasil atau memfilter data.
     console.log('Pencarian:', searchTerm);
 }
+const swiper = new Swiper(".swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+});
