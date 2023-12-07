@@ -13,7 +13,6 @@ body{
   background-color: #F7F8FC;
 }
 
-/* navbar */
 nav{
     display: flex;
     height: 80px;
@@ -127,7 +126,6 @@ nav{
   }
 
 
-  /* header */
   .contents-div {
     background-color: #F7F8FC;
     display: flex;
@@ -437,7 +435,6 @@ nav{
     }
   }
 
-  /* button */
   .container {
     max-width: 80%;
     margin: 20px 0;
@@ -1231,7 +1228,6 @@ nav{
     }
   }
 
-  /* review */
    .div {
     background-color: #F7F8FC;
     display: flex;
@@ -1741,7 +1737,6 @@ nav{
     }
   }
 
-  /* footer */
 footer {
     display: flex;
     flex-wrap: wrap;
