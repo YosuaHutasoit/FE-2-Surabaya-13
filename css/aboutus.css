@@ -24,7 +24,6 @@ header {
     align-items: center;
 }
 
-/* navbar */
 nav{
   display: flex;
   height: 80px;
@@ -137,7 +136,6 @@ input[type="checkbox"]{
   font-weight: 700;
 }
 
-/* konten */
 .aboutus-div {
   justify-content: center;
   background-color: #fff;
@@ -239,7 +237,6 @@ input[type="checkbox"]{
   }
 }
 
-/* footer */
 footer {
     display: flex;
     flex-wrap: wrap;
