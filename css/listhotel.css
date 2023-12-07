@@ -149,6 +149,7 @@ section {
   align-items: center;
   justify-content: center;
   margin-right: 20px;
+  height: auto;
 }
 
 .row1 img{

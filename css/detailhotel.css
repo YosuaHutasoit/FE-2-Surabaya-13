@@ -127,7 +127,7 @@ nav{
   }
 
 
-  /* konten */
+  /* header */
   .contents-div {
     background-color: #F7F8FC;
     display: flex;
@@ -439,13 +439,14 @@ nav{
 
   /* button */
   .container {
-    max-width: 800px;
+    max-width: 80%;
     margin: 20px 0;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     margin-left: 8.7%;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    text-align:justify;
   }
 
   .button-desc h1 {
@@ -455,9 +456,10 @@ nav{
   }
 
   .button-desc p {
-      color: #666;
-      margin-bottom: 10px;
-  }
+    color: #666;
+    margin-bottom: 10px; 
+    line-height: 1.5; 
+}   
 
   .button-desc {
       margin-top: 20px;
@@ -496,13 +498,191 @@ nav{
       }
   }
 
-    
-    @media (max-width: 991px) {
-      button {
-        width: 100%;
-        margin-left: 0;
-      }
-    }
+
+  /* fasilitas  */
+  .desktop {
+    background-color: #F7F8FC;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .desktop .div {
+    background-color: #F7F8FC;
+    width: 1440px;
+    height: 219px;
+    position: relative;
+  }
+  
+  .desktop .frame {
+    gap: 17px;
+    top: 96px;
+    left: 132px;
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .desktop .group {
+    position: relative;
+    width: 28px;
+    height: 28px;
+  }
+  
+  .desktop .text-wrapper {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #3e3e3e;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .desktop .frame-2 {
+    gap: 18px;
+    top: 158px;
+    left: 133px;
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .desktop .vector {
+    position: relative;
+    width: 26.3px;
+    height: 28.3px;
+    margin-top: -0.15px;
+    margin-bottom: -0.15px;
+    margin-left: -0.15px;
+  }
+  
+  .desktop .frame-3 {
+    gap: 17px;
+    top: 99px;
+    left: 554px;
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .desktop .img {
+    position: relative;
+    width: 26.95px;
+    height: 22.15px;
+    margin-top: -0.3px;
+    margin-bottom: -0.3px;
+    margin-left: -0.3px;
+  }
+  
+  .desktop .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.73px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #3e3e3e;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .desktop .frame-4 {
+    gap: 17px;
+    top: 96px;
+    left: 1141px;
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .desktop .frame-5 {
+    gap: 17px;
+    top: 161px;
+    left: 554px;
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .desktop .group-2 {
+    position: relative;
+    width: 26.46px;
+    height: 20.71px;
+  }
+  
+  .desktop .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #3e3e3e;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .desktop .frame-6 {
+    gap: 17px;
+    top: 99px;
+    left: 813px;
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .desktop .beauty-pools {
+    position: relative;
+    width: 31.5px;
+    height: 22.5px;
+    margin-top: -0.25px;
+    margin-bottom: -0.25px;
+    margin-left: -0.25px;
+  }
+  
+  .desktop .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.5px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #3e3e3e;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .desktop .frame-7 {
+    gap: 17px;
+    top: 158px;
+    left: 813px;
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .desktop .vector-2 {
+    position: relative;
+    width: 31px;
+    height: 27px;
+  }
+  
+  .desktop .nginep-logo {
+    position: absolute;
+    height: 42px;
+    top: 22px;
+    left: 133px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: #3e3e3e;
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
 
   /* rating hotel */
   .rate{
@@ -515,7 +695,7 @@ nav{
     align-items: center;
     background-color: #F7F8FC;
     display: flex;
-    width: 100%;
+    width: 102%;
     flex-direction: column;
     padding: 31px 60px 0;
     
@@ -1050,7 +1230,516 @@ nav{
       padding: 10px;
     }
   }
-  
+
+  /* review */
+   .div {
+    background-color: #F7F8FC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 60px;
+  }
+  @media (max-width: 991px) {
+    .div {
+      padding: 0 20px;
+    }
+  }
+  .review-2 {
+    display: flex;
+    width: 100%;
+    max-width: 1184px;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .review-2 {
+      max-width: 100%;
+    }
+  }
+  .review-3 {
+    display: flex;
+    padding-right: 38px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  @media (max-width: 991px) {
+    .review-3 {
+      max-width: 100%;
+      flex-wrap: wrap;
+      padding-right: 20px;
+    }
+  }
+  .review-4 {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    align-items: start;
+  }
+  .review-5 {
+    display: flex;
+    width: 136px;
+    max-width: 100%;
+    gap: 15px;
+  }
+  .review-img {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    flex: 1;
+  }
+  .review-6 {
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    margin: auto 0;
+  }
+  .review-7 {
+    color: #3e3e3e;
+    white-space: nowrap;
+    font: 600 14px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-7 {
+      white-space: initial;
+    }
+  }
+  .review-8 {
+    color: #b8b8b8;
+    margin-top: 5px;
+    white-space: nowrap;
+    font: 400 14px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-8 {
+      white-space: initial;
+    }
+  }
+  .review-9 {
+    color: #3e3e3e;
+    align-self: stretch;
+    margin-top: 34px;
+    font: 400 14px Poppins, sans-serif;
+  }
+  .review-10 {
+    display: flex;
+    margin-top: 52px;
+    width: 136px;
+    max-width: 100%;
+    gap: 15px;
+  }
+  @media (max-width: 991px) {
+    .review-10 {
+      margin-top: 40px;
+    }
+  }
+  .review-11 {
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    margin: auto 0;
+  }
+  .review-12 {
+    color: #3e3e3e;
+    white-space: nowrap;
+    font: 600 14px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-12 {
+      white-space: initial;
+    }
+  }
+  .review-13 {
+    color: #b8b8b8;
+    margin-top: 5px;
+    white-space: nowrap;
+    font: 400 14px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-13 {
+      white-space: initial;
+    }
+  }
+  .review-14 {
+    color: #3e3e3e;
+    align-self: stretch;
+    margin-top: 34px;
+    font: 400 14px Poppins, sans-serif;
+  }
+  .review-15 {
+    align-self: start;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    align-items: start;
+  }
+  @media (max-width: 991px) {
+    .review-15 {
+      max-width: 100%;
+    }
+  }
+  .review-16 {
+    display: flex;
+    width: 136px;
+    max-width: 100%;
+    gap: 15px;
+  }
+  .review-17 {
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    margin: auto 0;
+  }
+  .review-18 {
+    color: #3e3e3e;
+    white-space: nowrap;
+    font: 600 14px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-18 {
+      white-space: initial;
+    }
+  }
+  .review-19 {
+    color: #b8b8b8;
+    margin-top: 5px;
+    white-space: nowrap;
+    font: 400 14px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-19 {
+      white-space: initial;
+    }
+  }
+  .review-20 {
+    color: #3e3e3e;
+    align-self: stretch;
+    margin-top: 24px;
+    font: 400 14px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-20 {
+      max-width: 100%;
+    }
+  }
+  .review-21 {
+    display: flex;
+    margin-top: 62px;
+    width: 136px;
+    max-width: 100%;
+    gap: 15px;
+  }
+  @media (max-width: 991px) {
+    .review-21 {
+      margin-top: 40px;
+    }
+  }
+  .review-22 {
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    margin: auto 0;
+  }
+  .review-23 {
+    color: #3e3e3e;
+    white-space: nowrap;
+    font: 600 14px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-23 {
+      white-space: initial;
+    }
+  }
+  .review-24 {
+    color: #b8b8b8;
+    margin-top: 5px;
+    white-space: nowrap;
+    font: 400 14px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-24 {
+      white-space: initial;
+    }
+  }
+  .review-25 {
+    color: #3e3e3e;
+    align-self: stretch;
+    margin-top: 24px;
+    font: 400 14px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-25 {
+      max-width: 100%;
+    }
+  }
+  .review-26 {
+    display: flex;
+    margin-top: 52px;
+    padding-right: 80px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  @media (max-width: 991px) {
+    .review-26 {
+      max-width: 100%;
+      flex-wrap: wrap;
+      padding-right: 20px;
+      margin-top: 40px;
+    }
+  }
+  .review-27 {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    align-items: start;
+  }
+  .review-28 {
+    display: flex;
+    gap: 15px;
+  }
+  .review-img-2 {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    max-width: 100%;
+  }
+  .review-29 {
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    margin: auto 0;
+  }
+  .review-30 {
+    color: #3e3e3e;
+    white-space: nowrap;
+    font: 600 14px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-30 {
+      white-space: initial;
+    }
+  }
+  .review-31 {
+    color: #b8b8b8;
+    margin-top: 5px;
+    white-space: nowrap;
+    font: 400 14px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-31 {
+      white-space: initial;
+    }
+  }
+  .review-32 {
+    color: #3e3e3e;
+    align-self: stretch;
+    margin-top: 34px;
+    font: 400 14px Poppins, sans-serif;
+  }
+  .review-33 {
+    display: flex;
+    margin-top: 52px;
+    width: 136px;
+    max-width: 100%;
+    gap: 15px;
+  }
+  @media (max-width: 991px) {
+    .review-33 {
+      margin-top: 40px;
+    }
+  }
+  .review-34 {
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    margin: auto 0;
+  }
+  .review-35 {
+    color: #3e3e3e;
+    white-space: nowrap;
+    font: 600 14px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-35 {
+      white-space: initial;
+    }
+  }
+  .review-36 {
+    color: #b8b8b8;
+    margin-top: 5px;
+    white-space: nowrap;
+    font: 400 14px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-36 {
+      white-space: initial;
+    }
+  }
+  .review-37 {
+    color: #3e3e3e;
+    align-self: stretch;
+    margin-top: 34px;
+    font: 400 14px Poppins, sans-serif;
+  }
+  .review-38 {
+    align-self: start;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 40px;
+  }
+  .review-39 {
+    display: flex;
+    width: 135px;
+    max-width: 100%;
+    gap: 15px;
+  }
+  .review-40 {
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+    margin: auto 0;
+  }
+  .review-41 {
+    color: #3e3e3e;
+    white-space: nowrap;
+    font: 600 14px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-41 {
+      white-space: initial;
+    }
+  }
+  .review-42 {
+    color: #b8b8b8;
+    margin-top: 5px;
+    white-space: nowrap;
+    font: 400 14px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-42 {
+      white-space: initial;
+    }
+  }
+  .review-43 {
+    color: #3e3e3e;
+    align-self: stretch;
+    margin-top: 24px;
+    font: 400 14px Poppins, sans-serif;
+  }
+  .review-44 {
+    background-color: #e6e6e6;
+    display: flex;
+    margin-top: 62px;
+    height: 1px;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .review-44 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .review-45 {
+    color: #3e3e3e;
+    margin-top: 55px;
+    white-space: nowrap;
+    font: 500 28px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-45 {
+      max-width: 100%;
+      margin-top: 40px;
+      white-space: initial;
+    }
+  }
+  .review-46 {
+    color: #3e3e3e;
+    margin-top: 18px;
+    white-space: nowrap;
+    font: 400 14px Poppins, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .review-46 {
+      max-width: 100%;
+      white-space: initial;
+    }
+  }
+  .review-47 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    min-height: 530px;
+    margin-top: 47px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 60px;
+  }
+  @media (max-width: 991px) {
+    .review-47 {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  }
+  .review-img-3 {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+  }
+  .review-img-4 {
+    aspect-ratio: 0.81;
+    object-fit: contain;
+    object-position: center;
+    width: 44px;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 179px 0 148px;
+    z-index: 2;
+  }
+  @media (max-width: 991px) {
+    .img-4 {
+      margin: 40px 0;
+    }
+  }
 
   /* footer */
 footer {
