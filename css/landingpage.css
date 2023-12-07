@@ -23,8 +23,6 @@ header {
 }
 
 
-/* navbar */
-
 nav {
     display: flex;
     height: 80px;
@@ -149,7 +147,6 @@ input[type="checkbox"] {
 }
 
 
-/* hero section */
 .hero {
     width: 100%;
     height: 50vh;
@@ -181,7 +178,6 @@ input[type="checkbox"] {
 }
 
 
-/* Search */
 .search {
     display: flex;
     align-items: center;
@@ -213,7 +209,6 @@ input[type="checkbox"] {
 }
 
 
-/* Title Populer */
 .title {
     background-color: white;
     display: flex;
@@ -231,13 +226,7 @@ input[type="checkbox"] {
 }
 
 
-/* Title Top Populer End */
-
-
-/* Card Populer */
-
 .container-card {
-    /* width: 100%; */
     height: auto;
     padding: 1.7rem 0;
     background-color: white;
@@ -282,27 +271,6 @@ input[type="checkbox"] {
     transform: scale(1.1);
 }
 
-
-/* @media (max-width: 920px) {
-    .card {
-        width: 15rem;
-    }
-    .card {
-        display: flex;
-        flex-direction: column;
-        width: 20rem;
-        box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.4);
-        border-radius: 30px;
-        overflow: hidden;
-        font-family: 'Poppins', sans-serif;
-    } 
-} */
-
-
-/* Card Populer End */
-
-
-/* Testimonial */
 
 .client {
     background-color: var(--white);
@@ -368,18 +336,12 @@ input[type="checkbox"] {
 }
 
 
-/* testimonial end */
-
-
-/* Find */
 
 .find {
     padding-top: 5rem;
     background-color: #F7F8FC;
 }
 
-
-/* carosel */
 
 .wrapper {
     width: 100%;
@@ -402,7 +364,6 @@ input[type="checkbox"] {
     overflow: hidden;
     box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.4);
     grid-template-rows: 50% 50%;
-    /* Two rows with equal height */
 }
 
 .carousel-wrapper {
@@ -486,8 +447,6 @@ input[type="checkbox"] {
 }
 
 
-/* View All Buttom */
-
 .view-all {
     width: 100%;
     padding: 10px;
@@ -510,14 +469,6 @@ input[type="checkbox"] {
     color: #FE7200;
 }
 
-
-/* View All Buttom End*/
-
-
-/* Carosel End */
-
-
-/* subscribe */
 
 .container-subscribe {
     padding: 4rem 5rem;
@@ -588,11 +539,6 @@ input[type="checkbox"] {
     color: white;
 }
 
-
-/* subscribe end */
-
-
-/* footer */
 
 footer {
     display: flex;
