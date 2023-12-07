@@ -9,8 +9,7 @@ Di bawah ini dua link untuk menuju ke hasil project final Hotel Haven:
 |----------------------|----------------------------------------------------|---------------------------------------------------------------------------------------|
 | HotelHaven                | [Menuju Website](https://hotelhavensurabaya.netlify.app/) | Link website utama HotelHaven.|
 <br>
-
-<br> Berikut tim perancang dan pengembang XGrow:
+<br> Berikut tim perancang dan pengembang Hotel Haven:
 
 | Nama                   | Role                      | Email                               |
 |------------------------|---------------------------|-------------------------------------|
