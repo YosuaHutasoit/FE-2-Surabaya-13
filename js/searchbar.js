@@ -5,6 +5,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function handleSearch() {
     const searchTerm = document.getElementById('search').value.toLowerCase();
-    // Lakukan sesuatu dengan nilai pencarian, seperti menampilkan hasil atau memfilter data.
     console.log('Pencarian:', searchTerm);
 }
