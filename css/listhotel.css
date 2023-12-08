@@ -141,7 +141,7 @@ section {
 
 
 .logo_location .row1 {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,20 +149,32 @@ section {
   height: auto;
 }
 
-.row1 img {
+.logo-box {
+  background-color: #E4E4EC;
+  padding: 5px;
+  border-radius: 10px;
   transition: 0.3s;
 }
 
-.logo1 img,
-.logo2 img,
-.logo3 img,
-.logo4 img {
-  transition: 0.3s;
+.row1 .logo-box:hover {
+  transform: scale(0.95);
+}
+
+.logo1,
+.logo2,
+.logo3,
+.logo4 {
   margin-left: 20px;
 }
 
-.row1 img:hover {
-  transform: scale(0.9);
+.logo-text {
+  padding: 5px;
+  transition: 0.3s;
+  color: #333;
+}
+
+.row1 .logo-text:hover {
+  transform: scale(1);
 }
 
 @media only screen and (max-width: 768px) {
@@ -171,14 +183,15 @@ section {
     text-align: center;
   }
 
-  .logo1 img,
-  .logo2 img,
-  .logo3 img,
-  .logo4 img {
+  .logo1,
+  .logo2,
+  .logo3,
+  .logo4 {
     margin-left: 0;
     margin-top: 10px;
   }
 }
+
 
 .wrapper {
   width: 100%;
@@ -194,9 +207,9 @@ section {
 .carousel-container {
   position: relative;
   width: 350px;
-  height: 510px;
+  height: 550px;
   border-radius: 18px;
-  margin-top: 3rem;
+  margin-top: 1rem;
   overflow: hidden;
   box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.4);
 }
@@ -224,12 +237,6 @@ section {
   height: auto;
 }
 
-.card-carosel .love {
-  position: absolute;
-  margin-top: 1rem;
-  left: 19rem;
-  color: rgba(255, 255, 255, 0.5);
-}
 
 .card-carosel img {
   width: 350px;
@@ -239,25 +246,23 @@ section {
 
 .carosel-info {
   height: 23%;
-  padding: 0.5rem;
-  
+  padding: 0.2rem;
 }
 
+
 .carosel-info h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-left: 5px;
+  font-size: 1.3rem;
+  font-weight: 1rem;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 .carosel-info p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: normal;
-  margin-top: 10px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
-
-
 
 .card-carosel .price {
   font-size: 1rem;
@@ -291,9 +296,7 @@ section {
   right: 0;
 }
 
-.price {
-  padding: 3rem 0 0 0;
-}
+
 
 .carosel-info1 {
   display: flex;
