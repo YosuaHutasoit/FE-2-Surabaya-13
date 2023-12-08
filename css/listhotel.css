@@ -149,22 +149,35 @@ section {
   height: auto;
 }
 
-.row1 img{
-  transition: .3s;
+.row1 img {
+  transition: 0.3s;
 }
 
-.logo1 img {
-  transition: .3s;
-  margin-left: 20px;
-}
-
-.logo2 img {
-  transition: .3s;
+.logo1 img,
+.logo2 img,
+.logo3 img,
+.logo4 img {
+  transition: 0.3s;
   margin-left: 20px;
 }
 
 .row1 img:hover {
   transform: scale(0.9);
+}
+
+@media only screen and (max-width: 768px) {
+  .logo_location .row1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo1 img,
+  .logo2 img,
+  .logo3 img,
+  .logo4 img {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 
 .wrapper {
