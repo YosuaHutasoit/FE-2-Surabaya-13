@@ -3,7 +3,7 @@ Hotel Haven adalah project yang dibangun dengan konsentrasi dan harapan besar ol
 
 ## 🌐 Link Hotel Haven Final Project
 
-Di bawah ini dua link untuk menuju ke hasil project final Hotel Haven:
+Di bawah ini dua link untuk menuju ke hasil project final Hotel Haven: 
 
 | Website              | Link                                               | Keterangan                                                                            |
 |----------------------|----------------------------------------------------|---------------------------------------------------------------------------------------|
