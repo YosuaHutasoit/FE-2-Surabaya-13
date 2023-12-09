@@ -1,4 +1,4 @@
-## ✌ Gruop 13 Section Surabaya
+## ✌ Group 13 Section Surabaya
 Hotel Haven adalah project yang dibangun dengan konsentrasi dan harapan besar oleh Grup 13 Section Surabaya KM AUG23, MSIB ( [RevoU](https://revou.co/) x [MSIB Kemendikbudristek](https://www.kemdikbud.go.id/) ). 
 
 ## 🌐 Link Hotel Haven Final Project
