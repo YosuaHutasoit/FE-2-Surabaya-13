@@ -23,7 +23,7 @@ body {
     position: fixed;
     z-index: 10;
     opacity: 0;
-    transition: all .2s ease-in;
+    transition: all .1s ease-in;
 }
 
 .popup__content {
@@ -229,6 +229,7 @@ input[type="checkbox"] {
     height: 4rem;
     color: black;
     margin-bottom: 60px;
+    z-index: 9;
 }
 
 .search i {
