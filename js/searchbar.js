@@ -1,12 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const searchBar = document.getElementById('search');
-    searchBar.addEventListener('input', handleSearch);
+    const searchElements = document.querySelectorAll('.search');
+
+    if (searchElements.length > 0) {
+        searchElements.forEach(function(searchElement) {
+            searchElement.addEventListener('input', handleSearch);
+        });
+    } else {
+        console.error("Elemen dengan kelas 'search' tidak ditemukan.");
+    }
 });
 
-function handleSearch() {
-    const searchTerm = document.getElementById('search').value.toLowerCase();
+function handleSearch(event) {
+    const searchTerm = event.target.value.toLowerCase();
     console.log('Pencarian:', searchTerm);
 }
+
 const swiper = new Swiper(".swiper", {
     slidesPerView: "auto",
     spaceBetween: 20,
@@ -24,11 +32,11 @@ dismiss.addEventListener("click", function() {
     console.log("kil dismiss");
     popup.classList.remove("popup--show");
     popup.classList.add("popup--close");
-})
+});
 
-shop.addEventListener("click", function() {
-    console.log("kil shop");
-    popup.classList.remove("popup--show");
-    popup.classList.add("popup--close");
-    alert("Selamat anda dapat diskon");
-})
+
+const searchElement = document.querySelector('#search');
+if (searchElement) {
+    searchElement.id = '';
+    searchElement.classList.add('search');
+}
