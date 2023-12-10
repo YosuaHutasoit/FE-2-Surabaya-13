@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const baseApiUrl = "https://be-2-surabaya-13-production.up.railway.app";
+    const baseApiUrl = "https://be-2-surabaya-13-production.up.railway.app/hotel";
     const subscribeButton = document.querySelector('.btn button');
 
     subscribeButton.addEventListener('click', async function () {
