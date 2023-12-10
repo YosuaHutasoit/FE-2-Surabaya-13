@@ -418,44 +418,7 @@
         </div>
     </div>
 
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const subscribeButton = document.querySelector('.btn button');
-
-        subscribeButton.addEventListener('click', function () {
-            const emailInput = document.querySelector('.search-subs input');
-            const email = emailInput.value;
-
-            if (email.trim() !== '') {
-                const data = {
-                    email: email
-                };
-
-                fetch('https://be-2-surabaya-13-production.up.railway.app/subscribes', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(data)
-                })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Respon jaringan tidak berhasil');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    console.log(data);
-                })
-                .catch(error => {
-                    console.error('Ada masalah dengan operasi fetch:', error);
-                });
-            } else {
-                console.error('Email tidak boleh kosong');
-            }
-        });
-    });
-    </script>
+    <script src="/js/API/subscribes.js"></script>
 
 
     <footer>
