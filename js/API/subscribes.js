@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
         if (email.trim() !== '') {
             if (isValidEmail(email)) {
                 const data = {
-                    email: email
+                    Email: email
                 };
 
                 try {
-                    const response = await fetch(`${baseApiUrl}/subscribes`, {
+                    const response = await fetch(`${baseApiUrl}/subscribe`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
