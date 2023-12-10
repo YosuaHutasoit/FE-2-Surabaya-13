@@ -1,25 +1,35 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector('.container-form form');
+document.addEventListener('DOMContentLoaded', function () {
+    const baseApiUrl = "https://be-2-surabaya-13-production.up.railway.app";
+    const bookingButton = document.querySelector('.container-form .btn');
 
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
+    bookingButton.addEventListener('click', async function () {
+        try {
+            const nameInput = document.querySelector('.container-form input[type="text"]');
+            const emailInput = document.querySelector('.container-form input[type="email"]');
+            // const dateInput = document.querySelector('.container-form input[type="date"]');
 
-        const formData = new FormData(form);
-        const apiEndpoint = 'https://be-2-surabaya-13-production.up.railway.app/reserved';
+            const reservationData = {
+                name: nameInput.value,
+                email: emailInput.value,
+                // date: dateInput.value,
+            };
 
-        fetch(apiEndpoint, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(Object.fromEntries(formData)),
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Reservation successful:', data);
-        })
-        .catch(error => {
-            console.error('Error during reservation:', error);
-        });
+            const response = await fetch(`${baseApiUrl}/reserveds`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(reservationData)
+            });
+
+            if (!response.ok) {
+                throw new Error('Respon jaringan tidak berhasil');
+            }
+
+            const data = await response.json();
+            console.log(data);
+        } catch (error) {
+            console.error('Ada masalah dengan operasi fetch:', error);
+        }
     });
 });
