@@ -244,11 +244,11 @@ section {
 .card-carosel img {
   width: 350px;
   object-fit: cover;
-  height: 70%;
+  height: 356px;
 }
 
 .carosel-info {
-  height: 23%;
+  height: 34%;
   padding: 0.2rem;
 }
 
@@ -264,18 +264,29 @@ section {
 .carosel-info p {
   font-size: 1rem;
   font-weight: normal;
-  margin-left: 10px;
+  margin-top: 10px;
+  margin-inline-end: 15px;
+  margin-inline-start: 15px; 
+  --tw-text-opacity: 1;
+  color: rgb(138 141 166 / var(--tw-text-opacity));
 }
 
+p {
+  text-align: justify;
+}
 .card-carosel .price {
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: 800;
-  margin-left: 5px;
+  /* margin-left: 5px; */
+  color: #fe5000;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .card-carosel .per {
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 20px;
   text-decoration: none;
   color: black;
 }
@@ -303,6 +314,7 @@ section {
 
 .carosel-info1 {
   display: flex;
+  justify-content: center;
 }
 
 .carosel-info1 span {
