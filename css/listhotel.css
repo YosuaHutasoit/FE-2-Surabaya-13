@@ -276,7 +276,6 @@ p {
 .card-carosel .price {
   font-size: 20px;
   font-weight: 800;
-  /* margin-left: 5px; */
   color: #fe5000;
   display: flex;
   justify-content: center;
