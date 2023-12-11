@@ -27,7 +27,13 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             const data = await response.json();
-            console.log(data);
+            
+            alert('Booking berhasil!');
+
+            nameInput.value = '';
+            emailInput.value = '';
+            dateInput.value = '';
+
         } catch (error) {
             console.error('Ada masalah dengan operasi fetch:', error);
         }

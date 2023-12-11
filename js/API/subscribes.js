@@ -27,6 +27,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     const responseData = await response.json();
                     console.log(responseData);
+
+                    alert('Email Anda sudah terkirim');
+
+                    emailInput.value = '';
                 } catch (error) {
                     console.error('Ada masalah dengan operasi fetch:', error.message);
                 }
