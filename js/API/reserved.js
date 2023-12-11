@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 const emailInput = document.querySelector('.container-form input[type="email"]');
                 const dateInput = document.querySelector('.container-form input[type="date"]');
 
-                if (!nameInput || !emailInput || !dateInput) {
-                    throw new Error('One or more input elements not found.');
+                if (!nameInput.value || !emailInput.value || !dateInput.value) {
+                    throw new Error('Please fill out all form fields.');
                 }
 
                 const reservationData = {
@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             } catch (error) {
                 console.error('Ada masalah dengan operasi fetch:', error);
+                alert(error.message);
             }
         });
     } else {
