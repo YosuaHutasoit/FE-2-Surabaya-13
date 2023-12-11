@@ -21,6 +21,7 @@
             <img class="popup__dismiss" src="image/btn-close.png" alt="Close">
         </div>
     </div>
+
     <nav>
         <div class="logo">
             <img src="image/Logo Haven.png" alt="" class="img-1">
@@ -35,14 +36,17 @@
             <li><a href="html/AboutUs.html">About Us</a></li>
         </ul>
     </nav>
+
     <div class="container-hero">
         <div class="hero">
             <div class="search">
                 <input type="text" placeholder="Staycation to" class="search-bar" />
-                <i class='bx bx-search'></i>
+                <i class='bx bx-search' onclick="clearSearch()"></i>
             </div>
         </div>
     </div>
+
+    <script src="js/searchbar.js"></script>
    
     <div class="title">
         <i class='bx bxs-location-plus'></i>
@@ -465,7 +469,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/searchbar.js"></script>
+    <script src="js/popup.js"></script>
 
 
 </body>
