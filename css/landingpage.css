@@ -572,6 +572,9 @@ input[type="checkbox"] {
     cursor: pointer;
     color: white;
 }
+.btn button:hover {
+    background-color: #ded6d1; 
+}
 
 footer {
     display: flex;
