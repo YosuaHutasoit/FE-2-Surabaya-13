@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const dateInput = document.querySelector('.container-form input[type="date"]');
 
             const reservationData = {
-                name: nameInput.value,
-                email: emailInput.value,
-                date: dateInput.value,
+                Name: nameInput.value,
+                Email: emailInput.value,
+                Date: dateInput.value,
             };
 
-            const response = await fetch(`${baseApiUrl}/reserveds`, {
+            const response = await fetch(`${baseApiUrl}/reserved`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -27,7 +27,13 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             const data = await response.json();
-            console.log(data);
+            
+            alert('Booking berhasil!');
+
+            nameInput.value = '';
+            emailInput.value = '';
+            dateInput.value = '';
+
         } catch (error) {
             console.error('Ada masalah dengan operasi fetch:', error);
         }

@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
         if (email.trim() !== '') {
             if (isValidEmail(email)) {
                 const data = {
-                    email: email
+                    Email: email
                 };
 
                 try {
-                    const response = await fetch(`${baseApiUrl}/subscribes`, {
+                    const response = await fetch(`${baseApiUrl}/subscribe`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
@@ -27,6 +27,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     const responseData = await response.json();
                     console.log(responseData);
+
+                    alert('Email Anda sudah terkirim');
+
+                    emailInput.value = '';
                 } catch (error) {
                     console.error('Ada masalah dengan operasi fetch:', error.message);
                 }
